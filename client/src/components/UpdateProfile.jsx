@@ -163,7 +163,7 @@ const UpdateProfile = (props) => {
         backgroundColor={theme.palette.background.alt}
       >
         <Typography fontWeight="500" variant="h5" sx={{ mb: "1.5rem" }}>
-          Welcome to Snap-It, update your profile!
+          Welcome to Wee, update your profile!
         </Typography>
         <Formik
           onSubmit={handleFormSubmit}
