@@ -186,7 +186,7 @@ const UpdatePassword = (props) => {
       >
         {!props.forgot && (
           <Typography fontWeight="500" variant="h5" sx={{ mb: "1.5rem" }}>
-            Welcome to Snap-It, update your password!
+            Welcome to Wee, update your password!
           </Typography>
         )}
         <Formik
