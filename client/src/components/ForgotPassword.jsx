@@ -13,7 +13,7 @@ const LoginPage = () => {
         textAlign="center"
       >
         <Typography fontWeight="bold" fontSize="32px" color="primary">
-          Snap-It
+          Wee
         </Typography>
       </Box>
       <Box
@@ -24,7 +24,7 @@ const LoginPage = () => {
         backgroundColor={theme.palette.background.alt}
       >
         <Typography fontWeight="500" variant="h5" sx={{ mb: "1.5rem" }}>
-          Welcome to Snap-It, the Social Media for Sociopaths!
+          Welcome to Wee, the Social Media for Sociopaths!
         </Typography>
         <UpdatePassword
           forgot={true}
