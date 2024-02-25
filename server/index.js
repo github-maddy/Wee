@@ -44,6 +44,10 @@ app.use('/users', userRoutes);
 app.use('/posts', postRoutes);
 app.use('/message', messageRoutes);
 
+app.get("/",(req,res)=>{
+    res.json("Hello")
+})
+
 // Mongoose Setup
 const port = process.env.PORT || 5000;
 
