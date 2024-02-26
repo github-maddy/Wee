@@ -125,18 +125,18 @@ export const sendRegistrationMail = async (req, res) => {
             },
             data: {
                 sender: {
-                    name: 'Snap-It',
-                    email: 'vsachdeva4859@gmail.com'
+                    name: 'Wee',
+                    email: 'madhavan.7d4@zohomail.in'
                 }, to: [{
                     email: email,
                     name: name
                 }
                 ],
-                subject: 'Registration OTP Snap-It',
-                htmlContent: `<p>Your registration otp for Snap-It is ${otp}</p>`,
+                subject: 'Registration OTP WEE',
+                htmlContent: `<p>Your registration otp for Wee is ${otp}</p>`,
                 replyTo: {
-                    email: 'vsachdeva4859@gmail.com',
-                    name: 'Snap-It'
+                    email: 'madhavan.7d4@zohomail.in',
+                    name: 'Wee'
                 }
             }
         });
@@ -144,7 +144,9 @@ export const sendRegistrationMail = async (req, res) => {
         console.log('Email sent successfully:', response.data);
         res.status(StatusCodes.OK).json(otp);
     } catch (error) {
+        console.log(error);
         res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({ error: error.message });
+
     }
 }
 
@@ -170,18 +172,18 @@ export const sendMail = async (req, res) => {
             },
             data: {
                 sender: {
-                    name: 'Snap-It',
-                    email: 'vsachdeva4859@gmail.com'
+                    name: 'Wee',
+                    email: 'madhavan.7d4@zohomail.in'
                 }, to: [{
                     email: email,
                     name: name
                 }
                 ],
-                subject: 'Reset Password OTP Snap-It',
-                htmlContent: `<p>Your reset password otp for Snap-It is ${otp}</p>`,
+                subject: 'Reset Password OTP WEE',
+                htmlContent: `<p>Your reset password otp for Wee is ${otp}</p>`,
                 replyTo: {
-                    email: 'vsachdeva4859@gmail.com',
-                    name: 'Snap-It'
+                    email: 'madhavan.7d4@zohomail.in',
+                    name: 'Wee'
                 }
             }
         });
